@@ -25,6 +25,7 @@ lazy val lib = Seq(
   "org.scalatest" %% "scalatest" % "3.0.1" % "test",
   "org.scalacheck" %% "scalacheck" % "1.13.+" % "test",
   "com.typesafe.akka" %% "akka-testkit" % "2.4.17" % "test",
+  "com.typesafe.akka" %% "akka-http" % "10.+",
   "net.databinder.dispatch" %% "dispatch-core" % "+" % "test")
 
 lazy val testLib = Seq(

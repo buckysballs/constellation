@@ -27,13 +27,5 @@ class NodeSpec() extends TestKit(ActorSystem("NodeSpec")) with ImplicitSender wi
       node ! testTx
       expectMsg(s"received: ${testTx.toString}")
     }
-
-    "blah blah" {
-      val probe = TestProbe()
-      val future = probe.ref.? "hello"
-      probe.expectMsg(0 millis, "hello")
-      probe.reply("world")
-      assert(future.isCompleted && future.value == Some(Success("world")))
-    }
   }
 }
